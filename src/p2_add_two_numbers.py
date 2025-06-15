@@ -1,12 +1,11 @@
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
 class Solution:
     def addTwoNumbers(
-        self, l1: Optional[ListNode], l2: Optional[ListNode]
-    ) -> Optional[ListNode]:
+        self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         answer = node = ListNode()
         carry = 0
         while l1 is not None or l2 is not None or carry == 1:
